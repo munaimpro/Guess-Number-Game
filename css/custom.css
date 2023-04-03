@@ -17,12 +17,9 @@ body, div{
 }
 
 .card{
+    border-color: #007bff;
     min-height: 15em;
     padding: 4em 0;
-}
-
-.card h1{
-    line-height: 6em;
 }
 
 button{
