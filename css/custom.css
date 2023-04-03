@@ -32,6 +32,10 @@ img{
     padding: 4em 0;
 }
 
+#medal{
+    font-size: 4em;
+}
+
 .show-attempt{
     min-height: 23.5em;
 }

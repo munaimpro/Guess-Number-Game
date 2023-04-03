@@ -12,6 +12,7 @@ function showResult(){
     let trophy = document.querySelector('#trophy');
     let userInput = document.querySelector('#userInput');
     let userAttempt = document.querySelector('#userAttempt');
+    let medal = document.querySelector('#medal');
     let position;
     
     //Assigning the attempt number that user will take
@@ -39,5 +40,13 @@ function showResult(){
         trophy.style.display = 'block';
         userInput.style.display = 'none';
         userAttempt.style.display = 'block';
+
+        if(attemptNumber < 4){
+            medal.innerHTML = "🥇";
+        } else if(attemptNumber >= 3 && attemptNumber <= 6){
+            medal.innerHTML = "🥈";
+        } else{
+            medal.innerHTML = "🥉";
+        }
     }
 }
