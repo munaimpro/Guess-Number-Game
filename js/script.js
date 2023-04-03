@@ -37,11 +37,11 @@ function showResult(){
         guessNumber.innerHTML = "You guessed too heigh! 😉";
     } else{
         guessNumber.innerHTML = `Congratulations! 🥇<br/>You guessed the right number<br/>It was ${randomNumber}`;
-        trophy.style.display = 'block';
         userInput.style.display = 'none';
         userAttempt.style.display = 'block';
 
         if(attemptNumber < 4){
+            trophy.style.display = 'block';
             medal.innerHTML = "🥇";
         } else if(attemptNumber >= 3 && attemptNumber <= 6){
             medal.innerHTML = "🥈";
