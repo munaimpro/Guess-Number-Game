@@ -36,7 +36,7 @@ function showResult(){
     } else if(inputNumber > randomNumber){
         guessNumber.innerHTML = "You guessed too heigh! 😉";
     } else{
-        guessNumber.innerHTML = `Congratulations!<br/>You guessed the right number<br/>It was ${randomNumber}`;
+        guessNumber.innerHTML = `Congratulations! 🎈 <br/>You guessed the right number<br/>It was ${randomNumber}`;
         userInput.style.display = 'none';
         userAttempt.style.display = 'block';
 
