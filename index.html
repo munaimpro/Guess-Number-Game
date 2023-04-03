@@ -9,7 +9,35 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10 text-center">
+                <h5>Guess A Number Between 1 and 30</h5>
+            </div>
+        </div>
+
+        <div class="row text-center justify-content-center mt-5">
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <h1>Guess The Number ⚠️</h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <input class="form-control mb-3" type="number" id="" placeholder="Select a number">
+                <button class="btn btn-success">Check</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+                <div class="col-md-5 mb-5 text-center">
+                    <h5>Total Attempts: <strong id="attemptNumber">0</strong></h5>
+                </div>
+                <div class="col-md-5 mb-5 text-center">
+                    <button class="btn btn-primary">Start Again</button>
+                </div>
+        </div>
+    </div>
+
 <script src="js/jquery-3.4.1.min.js"></script>    
 <script src="js/popper.min.js"></script>    
 <script src="js/bootstrap.min.js"></script>
