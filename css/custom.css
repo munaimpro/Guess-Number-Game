@@ -1,7 +1,8 @@
 
 
 html{
-    background: linear-gradient(-16deg, #62CDFF, #FFFFFF 888px);
+    background: linear-gradient(170deg, #62CDFF, #FFFFFF 888px);
+    min-height: 100vh;
 }
 
 input{

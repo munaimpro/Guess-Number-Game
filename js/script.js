@@ -12,9 +12,20 @@ function showResult(){
     let trophy = document.querySelector('#trophy');
     let userInput = document.querySelector('#userInput');
     let userAttempt = document.querySelector('#userAttempt');
+    let position;
     
     //Assigning the attempt number that user will take
     document.querySelector('#attemptNumber').innerHTML = attemptNumber;
+
+    //Assigning the position number that user will gain
+    if(attemptNumber < 4){
+        position = "1st";
+    } else if(attemptNumber >= 3 && attemptNumber <= 6){
+        position = "2nd";
+    } else{
+        position = "3rd";
+    }
+    document.querySelector('#position').innerHTML = position;
 
     //Showing output by checking conditions
     if(inputNumber < 1 || inputNumber > 30){
