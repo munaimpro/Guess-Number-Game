@@ -1,6 +1,6 @@
 /*-- Generating Random Number --*/
 let randomNumber = Math.floor(Math.random() * 30 + 1);
-
+console.log(randomNumber);
 
 /*-- Function creation to take input and show result --*/
 function showResult(){
@@ -9,6 +9,9 @@ function showResult(){
     let attemptNumber = Number(document.querySelector('#attemptNumber').textContent) + 1; /*-- Here the text inside the element has been taken as input. Then converted it to number value by using Number() method. Then 1 added to the current value. So every time when the function "showResult()" will be called, the value of "attemptNumber" will increase. --*/
     
     let guessNumber = document.querySelector('#guessNumber');
+    let trophy = document.querySelector('#trophy');
+    let userInput = document.querySelector('#userInput');
+    let userAttempt = document.querySelector('#userAttempt');
     
     //Assigning the attempt number that user will take
     document.querySelector('#attemptNumber').innerHTML = attemptNumber;
@@ -18,9 +21,12 @@ function showResult(){
         guessNumber.innerHTML = "Opps! 😟<br/>Please select a number between 1 and 30";
     } else if(inputNumber < randomNumber){
         guessNumber.innerHTML = "You guessed too low! 😎";
-    } else if(inputNumber < randomNumber){
+    } else if(inputNumber > randomNumber){
         guessNumber.innerHTML = "You guessed too heigh! 😉";
     } else{
         guessNumber.innerHTML = `Congratulations! 🥇<br/>You guessed the right number<br/>It was ${randomNumber}`;
+        trophy.style.display = 'block';
+        userInput.style.display = 'none';
+        userAttempt.style.display = 'block';
     }
 }

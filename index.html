@@ -15,6 +15,9 @@
             <div class="col-md-10 text-center">
                 <h5>Guess A Number Between 1 and 30</h5>
             </div>
+            <div class="col-md-10 text-center" id="trophy">
+                <h1> <img src="image/trophy1.png" alt="trophy"> </h1>
+            </div>
         </section>
     <!-- Guess number Title End ----------->
     
@@ -22,26 +25,25 @@
         <section class="row text-center justify-content-center mt-5">
             <div class="col-md-6 mb-3">
                 <div class="card">
-                    <h1 id="guessNumber">Guess The Number ⚠️</h1>
+                    <div class="card-body">
+                        <h1 id="guessNumber">Guess The Number ⚠️</h1>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+        <!-- Input and Output Div Start ----------->
+            <div class="col-md-4" id="userInput">
                 <input id="inputNumber" class="form-control mb-3" type="number" id="" placeholder="Select a number">
-                <button class="btn btn-success" onclick="showResult()">Check</button>
+                <button class="btn btn-success btn-block" onclick="showResult()">Check</button>
+            </div>
+
+        <!-- Attempt Count Div Start ----------->
+            <div class="col-md-4" id="userAttempt">
+                <h5>You took <strong id="attemptNumber">0</strong> attempts</h5>
+                <button class="btn btn-primary btn-block" onclick="location.reload()">Start Again</button>
             </div>
         </section>
     <!-- Input and Output Section End ----------->
-    
-    <!-- Attempt Count Section Start ----------->
-        <section class="row justify-content-center mt-5">
-                <div class="col-md-5 mb-5 text-center">
-                    <h5>Total Attempts: <strong id="attemptNumber">0</strong></h5>
-                </div>
-                <div class="col-md-5 mb-5 text-center">
-                    <button class="btn btn-primary" onclick="location.reload()">Start Again</button>
-                </div>
-        </section>
-    <!-- Attempt Count Section End ----------->
     </div>
 
 <script src="js/jquery-3.4.1.min.js"></script>    
