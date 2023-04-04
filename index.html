@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 🏆 Guess Number Game</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-    <div class="container-fluid">
-    <!-- Guess number Title Start ----------->
-        <section class="row justify-content-center mt-5">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> 🏆 Guess Number Game</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/custom.css">
+   </head>
+   <body>
+      <div class="container-fluid">
+         <!-- Guess number Title Start -->
+         <section class="row justify-content-center mt-5">
             <div class="col-md-10 text-center">
-                <h5>Guess A Number Between 1 and 30</h5>
+               <h5>Guess A Number Between 1 and 30</h5>
             </div>
             <div class="col-md-10 text-center" id="trophy">
-                <h1> <img src="image/trophy3.gif" alt="trophy"> </h1>
+               <h1> <img src="image/trophy3.gif" alt="trophy image"> </h1>
             </div>
-        </section>
-    <!-- Guess number Title End ----------->
-    
-    <!-- Input and Output Section Start ----------->
-        <section class="row text-center justify-content-center mt-5 mb-5">
+         </section>
+         <!-- Guess number Title End -->
+
+         <!-- Input and Output Section Start -->
+         <section class="row text-center justify-content-center mt-5 mb-5">
+            <!-- Output Div Start -->
             <div class="col-md-6 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 id="guessNumber">Guess The Number ⚠️</h1>
-                    </div>
-                </div>
+               <div class="card">
+                  <div class="card-body">
+                     <h1 id="guessNumber">Guess The Number ⚠️</h1>
+                  </div>
+               </div>
             </div>
+            <!-- Output Div End -->
 
-        <!-- Input and Output Div Start ----------->
+            <!-- Input Div Start -->
             <div class="col-md-4" id="userInput">
-                <input id="inputNumber" class="form-control mb-3" type="number" id="" placeholder="Select a number">
-                <button class="btn btn-success btn-block text-uppercase" onclick="showResult()">Check</button>
+               <input id="inputNumber" class="form-control mb-3" type="number" placeholder="Select a number">
+               <button class="btn btn-success btn-block text-uppercase" onclick="showResult()">Check</button>
             </div>
+            <!-- Input Div End -->
 
-        <!-- Attempt Count Div Start ----------->
+            <!-- Attempt Count Div Start -->
             <div class="col-md-4" id="userAttempt">
-                <h1 class="mb-4" id="medal"></h1>
-                <h5 class="mb-4">You have tried <strong id="attemptNumber">0</strong> times and won the <strong id="position">0</strong> position 👏</h5>
-                <button class="btn btn-primary btn-block text-uppercase" onclick="location.reload()">Start Again</button>
+               <h1 class="mb-4" id="medal">0</h1>
+               <h5 class="mb-4">You have tried <strong id="attemptNumber">0</strong> times and won the <strong id="position">0</strong> position 👏</h5>
+               <button class="btn btn-primary btn-block text-uppercase" onclick="location.reload()">Start Again</button>
             </div>
-        </section>
-    <!-- Input and Output Section End ----------->
-        <audio src="sound/click.mp3" id="clickSound"></audio>
-        <audio src="sound/flevel.mp3" id="flevelSound"></audio>
-        <audio src="sound/slevel.mp3" id="slevelSound"></audio>
-        <audio src="sound/finalwin.mp3" id="finalwinSound"></audio>
-    </div>
+            <!-- Attempt Count Div End -->
+         </section>
+         <!-- Input and Output Section End -->
 
-<script src="js/jquery-3.4.1.min.js"></script>    
-<script src="js/popper.min.js"></script>    
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>    
-</body>
+         <!-- Sound Effect Start -->
+         <audio src="sound/click.mp3" id="clickSound"></audio>
+         <audio src="sound/flevel.mp3" id="flevelSound"></audio>
+         <audio src="sound/slevel.mp3" id="slevelSound"></audio>
+         <audio src="sound/finalwin.mp3" id="finalwinSound"></audio>
+         <!-- Sound Effect End -->
+      </div>
+
+      <!-- JavaScript File Link Start -->
+      <script src="js/jquery-3.4.1.min.js"></script>    
+      <script src="js/popper.min.js"></script>    
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+      <!-- JavaScript File Link End -->    
+   </body>
 </html>
