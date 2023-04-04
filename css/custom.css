@@ -43,3 +43,21 @@ img{
 .show-attempt h5{
     line-height: 18em;
 }
+
+.congrats{
+    height: initial;
+    width: 82px;
+    position: relative;
+    bottom: 122px;
+    margin-bottom: -140px;
+    margin-right: -90px;
+}
+
+.congrats:first-child{
+    transform: rotate(40deg);
+}
+
+.congrats:last-child{
+    right: 18px;
+    transform: rotate(15deg);
+}

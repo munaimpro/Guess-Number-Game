@@ -1,6 +1,5 @@
 /*-- Generating Random Number --*/
 let randomNumber = Math.floor(Math.random() * 30 + 1);
-console.log(randomNumber);
 
 /*-- Function creation to take input and show result --*/
 function showResult(){
@@ -19,9 +18,9 @@ function showResult(){
     document.querySelector('#attemptNumber').innerHTML = attemptNumber;
 
     //Assigning the position number that user will gain
-    if(attemptNumber < 4){
+    if(attemptNumber < 6){
         position = "1st";
-    } else if(attemptNumber >= 3 && attemptNumber <= 6){
+    } else if(attemptNumber >= 5 && attemptNumber <= 10){
         position = "2nd";
     } else{
         position = "3rd";
@@ -36,14 +35,14 @@ function showResult(){
     } else if(inputNumber > randomNumber){
         guessNumber.innerHTML = "You guessed too heigh! 😉";
     } else{
-        guessNumber.innerHTML = `Congratulations! 🎈 <br/>You guessed the right number<br/>It was ${randomNumber}`;
+        guessNumber.innerHTML = `Congratulations! <img class="congrats" src="image/beloon1.gif"/><img class="congrats" src="image/beloon2.gif"/> <br/>You guessed the right number<br/>It was ${randomNumber}`;
         userInput.style.display = 'none';
         userAttempt.style.display = 'block';
 
-        if(attemptNumber < 4){
+        if(attemptNumber < 6){
             trophy.style.display = 'block';
             medal.innerHTML = "🥇";
-        } else if(attemptNumber >= 3 && attemptNumber <= 6){
+        } else if(attemptNumber >= 5 && attemptNumber <= 10){
             medal.innerHTML = "🥈";
         } else{
             medal.innerHTML = "🥉";
