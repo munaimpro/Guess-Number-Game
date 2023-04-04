@@ -20,16 +20,30 @@ button{
     box-shadow: inset 0 0 0.3em darkgrey;
 }
 
+button:focus{
+    box-shadow: none !important;
+}
+
 .btn-success{
     background: #33CF84;
     border-color: #22BF73;
-    text-transform: uppercase;
     font-weight: 600;
 }
 
-.btn-success:hover{
+.btn-success:hover, .btn-success:focus{
     background: #22BF73;
     border-color: #22BF73;
+}
+
+.btn-primary{
+    background: #222;
+    font-weight: 600;
+    border-color: #000;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background: #000;
+    border-color: #000;
 }
 
 div{
