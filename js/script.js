@@ -3,6 +3,9 @@ let randomNumber = Math.floor(Math.random() * 30 + 1);
 
 /*-- Function creation to take input and show result --*/
 function showResult(){
+    //Play the click sound
+    document.querySelector('#clickSound').play();
+
     let inputNumber = document.querySelector('#inputNumber').value;
     
     let attemptNumber = Number(document.querySelector('#attemptNumber').textContent) + 1; /*-- Here the text inside the element has been taken as input. Then converted it to number value by using Number() method. Then 1 added to the current value. So every time when the function "showResult()" will be called, the value of "attemptNumber" will increase. --*/
@@ -42,10 +45,16 @@ function showResult(){
         if(attemptNumber < 6){
             trophy.style.display = 'block';
             medal.innerHTML = "🥇";
+            //Play the final win sound
+            document.querySelector('#finalwinSound').play();
         } else if(attemptNumber >= 5 && attemptNumber <= 10){
             medal.innerHTML = "🥈";
+            //Play the second level sound
+            document.querySelector('#slevelSound').play();
         } else{
             medal.innerHTML = "🥉";
+            //Play the first level sound
+            document.querySelector('#flevelSound').play();
         }
     }
 }
