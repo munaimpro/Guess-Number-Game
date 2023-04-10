@@ -10,7 +10,7 @@ different types of celebration process with different sound effects.
 
 ## App screenshot
 
-![Logo](https://github.com/munaimpro/Guess-Number-Game/blob/main/image/screenshot.jpg?raw=true)
+![Logo](https://github.com/munaimpro/Guess-Number-Game/blob/main/image/screenshot.jpeg?raw=true)
 
 ## Follow me here
 
